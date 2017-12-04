@@ -63,7 +63,7 @@ public class CustomerManagerImplTest {
 
     @Test
     public void testCreateCustomer() {
-        Customer customer = createNewCustomer("John Winston Smith IV","563-645-897-213","2800 Brookmere Road, Arcadia,Pennsylvania, USA");
+        Customer customer = createNewCustomer("Francisco Carena 32", "+4687671", "Salamanca 644, 5105 Villa allende");
         manager.createCustomer(customer);
         Long cusID= customer.getId();
         assertNotNull(cusID);
@@ -75,7 +75,7 @@ public class CustomerManagerImplTest {
     @Test
     public void testGetCustomerByID() {
         assertNull(manager.getCustomerByID(1l));
-        Customer customer = createNewCustomer("John Winston Smith IV", "563-645-897-213", "2800 Brookmere Road, Arcadia,Pennsylvania, USA");
+        Customer customer = createNewCustomer("Francisco Carena 324", "+4687671", "Salamanca 644, 5105 Villa allende");
         manager.createCustomer(customer);
         Long cusID = customer.getId();
         Customer result = manager.getCustomerByID(cusID);
@@ -86,8 +86,8 @@ public class CustomerManagerImplTest {
 
         assertTrue(manager.findAllCustomers().isEmpty());
 
-        Customer c1 = createNewCustomer("John Winston Smith IV", "563-645-897-213", "2800 Brookmere Road, Arcadia,Pennsylvania, USA");
-        Customer c2 = createNewCustomer("Reginald Sylvester Pound V","686-713-365-994","3256 Golden Avenue, Spokane, Oregon, USA");
+        Customer c1 = createNewCustomer("Francisco Carena 43 3", "+4687671", "Salamanca 644, 5105 Villa allende");
+        Customer c2 = createNewCustomer("Francisco Carena 3244", "+4687671", "Salamanca 644, 5105 Villa allende");
 
         manager.createCustomer(c1);
         manager.createCustomer(c2);
@@ -104,8 +104,8 @@ public class CustomerManagerImplTest {
     @Test
     public void testDeleteCustomer() {
 
-        Customer c1 = createNewCustomer("John Winston Smith IV", "563-645-897-213", "2800 Brookmere Road, Arcadia,Pennsylvania, USA");
-        Customer c2 = createNewCustomer("Reginald Sylvester Pound V", "686-713-365-994", "3256 Golden Avenue, Spokane, Oregon, USA");
+        Customer c1 = createNewCustomer("Francisco Carena 323445", "+4687671", "Salamanca 644, 5105 Villa allende");
+        Customer c2 = createNewCustomer("Francisco Carena 433545345", "+4687671", "Salamanca 644, 5105 Villa allende");
 
         manager.createCustomer(c1);
         manager.createCustomer(c2);

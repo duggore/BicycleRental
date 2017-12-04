@@ -1,6 +1,5 @@
 package functionTest.BicycleRental;
 
-//package Controlers.BicycleRental;
 //
 //import org.apache.commons.dbcp2.BasicDataSource;
 //import org.junit.After;
@@ -16,8 +15,8 @@ package functionTest.BicycleRental;
 //import java.util.Comparator;
 //import java.util.List;
 //
-//import static cz.muni.fi.BicycleRental.BicycleManagerImplTest.createNewBike;
-//import static cz.muni.fi.BicycleRental.CustomerManagerImplTest.createNewCustomer;
+//import static Controlers.BicycleRental.BicycleManagerImplTest.createNewBike;
+//import static Controlers.BicycleRental.CustomerManagerImplTest.createNewCustomer;
 //import static org.junit.Assert.*;
 //
 ////import java.util.Date;
@@ -53,10 +52,9 @@ package functionTest.BicycleRental;
 //        bicycleManager.createBicycle(b2);
 //        bicycleManager.createBicycle(b3);
 //
-//        c1 = createNewCustomer("Jakub Podlomnik", "+421944687671", "Lipova 48, 608 00 Brno");
-//        c2 = createNewCustomer("Tomas Kluka", "+420753689427", "Masarykova 16, 608 00 Brno");
-//        c3 = createNewCustomer("Peter Slivka","+420758436971","Botanicka 47, 608 00 Brno");
-//
+//		c1 = createNewCustomer("Francisco Carena", "+4687671", "Salamanca 644, 5105 Villa allende");
+//        c2 = createNewCustomer("Tomas Kluka", "+420753689427", "Yapeyu 8, 5105 Villa Allende");
+//        c3 = createNewCustomer("Peter Slivka","+420758436971","La rioja 55, 5000 Cordoba");
 //        customerManager.createCustomer(c1);
 //        customerManager.createCustomer(c2);
 //        customerManager.createCustomer(c3);
@@ -65,9 +63,10 @@ package functionTest.BicycleRental;
 //        bicycleNotInDB = createNewBike(175, true);
 //        bicycleNotInDB.setId(b3.getId() + 100);
 //
-//        customerWithNullId = createNewCustomer("Jakub Podlomnik", "+421944687671", "Lipova 48, 608 00 Brno");
-//        customerNotInDB = createNewCustomer("Jakub Podlomnik", "+421944687671", "Lipova 48, 608 00 Brno");
+//		customerWithNullId = createNewCustomer("Carolina Alday", "+447671", "Lipova 48, 5105 Villa allende");
+//        customerNotInDB = createNewCustomer("Emilio pojeke", "+421871", "La cuesta torre 1 dept 2, 5103 Calera");
 //        customerNotInDB.setId(c3.getId() + 100);
+
 //
 //    }
 //
